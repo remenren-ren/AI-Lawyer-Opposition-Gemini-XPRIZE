@@ -1,0 +1,295 @@
+AI Lawyer Opposition
+Advanced 18-Dimension Review - User Guide
+
+PURPOSE
+
+Advanced 18-Dimension Review is a deeper optional weakness-review mode. It is
+designed for matters where preserving each legal perspective and receiving a
+complete written report are more important than minimizing API use.
+
+HOW TO OPEN IT
+
+1. Open either the Online or Offline application.
+2. Import or enter the complete matter.
+3. Add and verify at least one permitted model provider.
+4. Click AI Weakness Scan or Scan Weaknesses.
+5. Choose Advanced 18-Dimension Review for independent whole-matter reports.
+   In the Online application, choose the purple Contextual 18-Dimension
+   Challenge when every dimension should also test both sides' current
+   arguments and evidence against the complete matter.
+
+Choosing Standard Scan returns to the existing weakness-card workflow without
+changing its established logic.
+
+WHAT THE ADVANCED MODE DOES
+
+- The complete prepared matter is read independently through each of 18 legal
+  review dimensions.
+- Each dimension uses a separate model call and creates a separate full report.
+- A later dimension does not receive or copy the previous dimension's report.
+- The model is instructed not to use internal P1/P2/D1/D2 labels or a
+  sentence-by-sentence software decomposition.
+- Each report includes whole-matter understanding, full dimension reasoning,
+  positive-side analysis, negative-side analysis, important weaknesses,
+  questions, and possible response or cure paths.
+
+OUTPUT
+
+Every run creates a new folder under:
+
+runs\advanced_18_dimension_review_YYYYMMDD_HHMMSS
+
+The folder contains:
+
+- 00_prepared_case.txt: the exact prepared text used for the review;
+- 00_INDEX.md: index of all dimension reports;
+- 00_manifest.json: structured combined result record;
+- 00_COMPLETE_18_REPORTS.html: complete highlighted delivery report;
+- one JSON file and one Markdown report for every dimension.
+
+Use Open Combined Report after completion to inspect the highlighted findings
+and all 18 full reports in one document.
+
+PRIVACY
+
+Advanced Review sends the complete prepared matter once per dimension. It must
+not be started unless that transmission is authorized.
+
+- Online with Data Redaction: the prepared redacted matter is used.
+- Online without Data Redaction: the original matter is used after explicit
+  confirmation.
+- Offline External aid after redaction: the prepared redacted matter is used.
+- Offline Authorized cloud expert: the authorized original matter is used.
+- Offline Local-only confidentiality: only a verified local or private model
+  route is accepted.
+
+MODEL AND TOKEN LIMITS
+
+The 18 calls are independent. This prevents one long dimension report from
+using the output allowance of the other dimensions and avoids one malformed
+large JSON response destroying the entire run.
+
+Independent calls do not remove provider account limits. HTTP 429 means that
+the provider's request-rate or account quota has been reached. The software
+tries the next verified provider for the affected dimension. Reports already
+completed remain saved. Only the failed or unfinished dimension needs later
+review.
+
+TWO COMPLEMENTARY WEAKNESS-SCAN MODES
+
+AI Lawyer Opposition provides two complementary weakness-scan perspectives.
+They are deliberately different rather than duplicate functions. A law firm
+can use both, or select the perspective that best matches its preferred review
+method. A deployed service can therefore be configured around the firm's
+intake process, litigation workflow, confidentiality requirements, and model
+environment.
+
+COMPARISON TABLE
+
+| Comparison point | Online Standard Scan | Offline Standard Scan |
+| --- | --- | --- |
+| Material reviewed | Complete matter plus the positive-side arguments and evidence and the negative-side arguments and evidence | Primarily reads the complete original or prepared matter directly |
+| Analysis orientation | Tests weaknesses in positions that the parties have already formed; operates like a focused challenge within an active dispute | Reconstructs and understands the matter as a whole before each selected dimension independently searches for weaknesses |
+| Dimension mechanism | Sends the selected dimensions as structured review tasks and automatically divides them into smaller calls if output capacity is reached | Also performs a structured whole-matter review across the selected dimensions and divides the work into smaller calls when necessary |
+| Multiple-model handling | Combines findings returned by the verified model providers | Also combines successful model findings, with additional routing controls for local models, private models, and confidentiality modes |
+| Result presentation | Produces concise positive-side and negative-side weakness cards directly and removes explicit no-material-weakness records from the final visible cards | Converts the model findings into complete internal candidate records before presenting them as reusable weakness cards |
+| Practical review experience | More direct and targeted when both sides' arguments, evidence, exceptions, or conditions are already visible | More open-ended and better suited to discovering weaknesses before the matter has been organised into fixed opposing positions |
+
+Mode 1 - Whole-Matter Weakness Discovery
+
+- This is the principal perspective of the Offline Standard Scan.
+- The model reads the complete prepared matter directly and searches for
+  weaknesses across the overall facts, relationships, proof gaps, legal
+  elements, and competing possible interpretations.
+- It does not depend on the software's previously extracted positive and
+  negative argument or evidence frames.
+- It is especially useful at first intake, when the lawyer wants an open-ended
+  review of the client's entire story before fixing a litigation position.
+
+Mode 2 - Opponent-Position Contextual Challenge
+
+- This is the principal perspective of the Online Standard Scan.
+- The model reads the complete matter together with the positive-side and
+  negative-side arguments and evidence already presented in the workspace.
+- It tests each side's introduced conditions, assumptions, exceptions, legal
+  propositions, and factual inferences against the complete case rather than
+  reviewing an argument in isolation.
+- It is especially useful after the parties' positions are visible, because it
+  can identify the exact premise on which an opponent's argument depends and
+  explain why the wider record may not satisfy that premise.
+
+For example, a party may rely on privity of contract. Contextual Challenge can
+test that position against the other side's alleged variation, novation,
+waiver, intervention, instructions, acceptance of benefits, and conduct. The
+software does not assume that any such doctrine succeeds. It identifies the
+condition being introduced, checks it against the supplied facts, and explains
+where the argument remains exposed or requires professional verification.
+
+The two modes answer different professional questions:
+
+- Whole-Matter Weakness Discovery asks: "What weaknesses exist anywhere in
+  this case when the complete matter is read afresh?"
+- Opponent-Position Contextual Challenge asks: "Given the arguments and
+  conditions already raised by both sides, which of those positions becomes
+  vulnerable when tested against the complete matter?"
+
+WHY ONLINE STANDARD SCAN OFTEN FEELS MORE PRECISE
+
+The difference is not merely model intelligence. The Online Standard Scan is
+asked a materially different question because its input contains the complete
+matter and both sides' current arguments and evidence. The model can therefore
+identify the premise on which a particular position depends, compare that
+premise with the complete record, and state which missing fact, evidentiary
+bridge, legal condition, exception, or causal link makes the position
+vulnerable.
+
+The standard online workflow normally places all selected dimensions into one
+shared structured whole-case call for each verified provider. It divides the
+dimensions into smaller calls only when output capacity requires it. Every
+finding must identify the affected side and explain the weakness by reference
+to supplied facts. A dimension may return no finding, and explicit
+no-material-weakness records are removed from the final visible cards.
+
+By contrast, the Offline whole-matter model prompt primarily receives the
+original complete matter without depending on the prepared positive and
+negative side frames. It is therefore more exploratory and tends to expose
+case-wide factual, evidentiary, element, causation, and narrative gaps. In
+local-only mode, the secure local engine additionally reviews the positive and
+negative perspectives in separate passes.
+
+The practical distinction is:
+
+- Online contextual review asks which existing party position fails when it
+  is tested against the complete matter.
+- Offline whole-matter discovery asks what vulnerabilities exist anywhere in
+  the case when the matter is read afresh.
+
+The side frames remain allegations and working positions, not established
+facts. Poorly prepared or inaccurate side frames can cause a contextual scan
+to focus on the wrong premise, so professional review of the input frames
+remains necessary.
+
+This two-perspective design gives a law firm a practical deployment choice.
+Some firms may prefer open whole-matter discovery during client intake. Others
+may prefer targeted contextual challenge once pleadings, submissions, or an
+opponent's theory are available. Firms can retain both and apply them at
+different stages of the same matter.
+
+These two perspectives are separate from the Standard-versus-Advanced depth
+choice below. Standard Scan produces interactive weakness cards. Advanced
+18-Dimension Review makes every dimension reread the complete prepared matter
+independently and preserves a full report for each dimension.
+
+PURPLE ONLINE 18-DIMENSION BUTTON
+
+The Online application retains the existing Standard Scan and the existing
+Advanced 18-Dimension Review. It also provides a separate purple Contextual
+18-Dimension Challenge button. Nothing in the original two workflows is
+replaced.
+
+The purple workflow applies the Online Standard Scan perspective at advanced
+depth. Each of the 18 dimensions independently receives:
+
+- the original complete case;
+- the current positive-side arguments and evidence; and
+- the current negative-side arguments and evidence.
+
+Each dimension writes its own full free-form report and then extracts only the
+supported surface-card titles and previews. The side frames are treated as
+positions to test, not as established facts. The reviewer checks introduced
+conditions, assumptions, exceptions, factual bridges, and legal propositions
+against the complete matter. It does not replace the gold whole-matter review,
+which remains available when a firm wants each dimension to approach the case
+without relying on the prepared side frames.
+
+The Offline application continues to show the original Standard Scan and gold
+Advanced 18-Dimension Review only.
+
+DRAGGING A WEAKNESS INTO SINGLE-POINT REVIEW
+
+An Advanced 18-Dimension weakness card can be dragged into either the Standard
+Single-Point Review window or the Advanced Single-Point 2R window. Drop the
+card anywhere inside the relevant Single-Point Review window.
+
+The selected-point field receives the card conclusion, its supported preview,
+the review dimension, and the source model. The Point belongs to selector is
+set automatically to the side weakened by the card. The lawyer can edit or
+narrow the inserted text before starting the single-point workflow.
+
+Dropping a card into Single-Point Review does not remove it from the weakness
+card list and does not change the original full 18-dimension report.
+
+STANDARD OR ADVANCED
+
+Choose Standard Scan when you need:
+
+- faster interactive weakness cards;
+- coordinated results in the existing case workflow;
+- lower model use;
+- direct card inspection and reuse.
+
+Choose Advanced 18-Dimension Review when you need:
+
+- every dimension to reread the full matter independently;
+- 18 preserved professional reports;
+- deeper coverage with less risk of dimensions suppressing one another;
+- isolated failures and auditable source reports;
+- a combined highlighted report for lawyer review.
+
+SYNTHETIC ANALOGUE CASE DIRECTORY BUTTONS
+
+The Synthetic Analogue Case Directory has two separate model controls.
+
+Scan Selected Cases (Max 5)
+
+- This is the broader fictional-case weakness-card scan.
+- Select between one and five fictional matters. On Windows, hold Ctrl while
+  clicking separate matters, or hold Shift to select a continuous range. A
+  normal click selects one matter and clears the previous selection.
+- The selected matters form one user batch, but they are reviewed sequentially
+  by matter and dimension.
+- Every enabled dimension independently rereads the complete fictional matter
+  and writes a natural free-form internal analysis without a card template.
+- A short second pass reads that completed analysis and extracts only the
+  affected side, outside-card title, and one-sentence preview. Opening the card
+  displays the original free-form report, not a reformatted explanation.
+- Each enabled dimension therefore uses approximately two provider calls. With
+  18 dimensions, one fictional matter uses approximately 36 calls; five matters
+  may use approximately 180 calls. The confirmation dialog shows the estimate.
+- The five-matter ceiling controls run time, provider cost, rate-limit exposure,
+  and output reliability. It prevents several detailed matters from competing
+  for one response limit and isolates a failed or malformed case response.
+- Results from completed matters are combined and locally deduplicated at the
+  end of the selected batch.
+
+18D Opposition for Selected Case
+
+- This is a deep courtroom-style attack-and-defence workflow, not the multi-case
+  weakness-card scan.
+- Select exactly one fictional matter before using this button.
+- The selected matter enters the complete 18-dimension, two-round opposition
+  workflow so its facts, two sides, responses, and follow-up attacks remain one
+  coherent case narrative.
+- Other fictional matters must be opened separately. Combining several matters
+  would mix independent narratives and multiply the calls and output volume.
+
+For both controls, only the selected fictional material is transmitted to the
+verified provider. The original client matter and local skeleton are not sent.
+
+DEMO NARRATION
+
+"The blue button lets us select up to five fictional analogues and queue them
+for weakness discovery. For each analogue, every enabled dimension independently
+rereads the complete fictional matter and writes its analysis freely. A short
+second pass extracts only the title shown on the outside card; opening the card
+shows the original free-form report instead of a fixed explanation template.
+The gold button is different: it takes one selected fictional matter into the
+complete 18-dimension, two-round attack-and-defence workflow. In either case,
+the original client matter remains local."
+
+PROFESSIONAL REVIEW
+
+All outputs are legal-preparation and drafting references. They may contain
+incorrect factual inferences, legal propositions, citations, or jurisdictional
+assumptions. A qualified person must check the original record, applicable law,
+authorities, and final wording before use.
