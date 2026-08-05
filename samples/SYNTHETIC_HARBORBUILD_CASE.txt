@@ -1,0 +1,30 @@
+SYNTHETIC DEMONSTRATION ONLY — NO REAL CLIENT DATA
+
+HarborBuild Pty Ltd hired Northstar Digital Services Pty Ltd under a written
+contract dated 12 March 2026 to deliver a document-management system for
+AUD 48,000. The contract required staged delivery and written approval for
+changes. HarborBuild paid AUD 32,000. Northstar says later chat messages
+approved extra work and another AUD 16,000, but HarborBuild disputes that any
+valid variation was agreed.
+
+The system was late, its backup failed during migration, and the search feature
+did not meet the acceptance criteria. HarborBuild wants the material organised,
+both sides reviewed, the evidence gaps identified, and a lawyer-ready summary
+before a synthetic mediation date of 28 August 2026.
+
+HarborBuild's desired outcome is restoration of the lost backup data if
+possible, delivery of a compliant search function, no payment of the disputed
+AUD 16,000 variation, and compensation or a credit for delay and remediation
+costs.
+
+Clause 9 says any scope or price variation must be in writing and signed by
+authorised representatives of both parties. The synthetic evidence set is one
+22-page contract, three invoices, 18 project emails, 46 chat messages, six
+screenshots and one acceptance-test spreadsheet. The search feature was
+required to return indexed documents within three seconds and pass 20 listed
+test cases. It failed seven tests and sometimes returned incomplete results.
+The criteria appear in Schedule 2 and the acceptance spreadsheet.
+
+All names, facts, documents and dates in this scenario are fictional and were
+created only for software testing and competition demonstration.
+
