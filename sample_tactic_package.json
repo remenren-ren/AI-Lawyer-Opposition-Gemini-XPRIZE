@@ -1,0 +1,10 @@
+{
+  "nido_tactic_combo_package": true,
+  "case_name": "Tactic Package Test Matter",
+  "jurisdiction": "Australia / AU - Commonwealth",
+  "background": "Original case summary should not be swallowed by the tactic package.",
+  "pos_args": "Original positive-side argument\n\n[Tactic Package: for attacking negative-side weaknesses]\n1. [Cross-Domain Weapon] Target: the opposing side's customer service chat record, used to prove notice timing.\n   - Check source, screenshot completeness, platform backend consistency, and privacy or unauthorized evidence-collection risk.",
+  "pos_ev": "Original positive-side evidence",
+  "neg_args": "Original negative-side argument\n\n[Tactic Package: for attacking positive-side weaknesses]\n1. [Procedural Defect] Target: the positive side's unboxing video, used to prove when the defect was discovered.\n   - Check whether the video is continuous, whether timestamps match the transaction timeline, and whether packaging and seals are visible.",
+  "neg_ev": "Original negative-side evidence"
+}

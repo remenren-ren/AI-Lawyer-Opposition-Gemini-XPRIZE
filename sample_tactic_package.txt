@@ -1,0 +1,14 @@
+## Nido Tactic Package
+
+Auto assignment: positive-side weaknesses are assigned to the opposing side; negative-side weaknesses are assigned to the positive side.
+
+## Tactics For Positive Side
+1. [Cross-Domain Weapon] Target: the opposing side's customer service chat record, used to prove notice timing.
+   - Check source, screenshot completeness, platform backend consistency, and privacy or unauthorized evidence-collection risk.
+
+## Tactics For Negative Side
+1. [Procedural Defect] Target: the positive side's unboxing video, used to prove when the defect was discovered.
+   - Check whether the video is continuous, whether timestamps match the transaction timeline, and whether packaging and seals are visible.
+
+## Usage
+Import this package back into the main battlefield. The software should append it to the argument boxes and must not overwrite the original case.

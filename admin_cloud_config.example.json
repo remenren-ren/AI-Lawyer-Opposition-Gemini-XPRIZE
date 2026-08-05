@@ -1,0 +1,10 @@
+{
+  "project_id": "YOUR_FIREBASE_PROJECT_ID",
+  "web_api_key": "YOUR_FIREBASE_WEB_API_KEY",
+  "auth_domain": "YOUR_FIREBASE_PROJECT_ID.firebaseapp.com",
+  "app_id": "YOUR_FIREBASE_WEB_APP_ID",
+  "provider_document": "users/{uid}/providerProfiles/default",
+  "account_email_map": {
+    "demo": "demo@example.com"
+  }
+}

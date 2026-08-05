@@ -1,0 +1,6 @@
+{
+  "environment": "test",
+  "application_id": "YOUR_PINCH_SANDBOX_APPLICATION_ID",
+  "secret_key": "YOUR_PINCH_SANDBOX_SECRET",
+  "publishable_key": "YOUR_PINCH_CAPTUREJS_PUBLISHABLE_KEY"
+}
